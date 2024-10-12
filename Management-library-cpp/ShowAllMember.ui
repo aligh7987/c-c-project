@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShowAllMember</class>
+ <widget class="QDialog" name="ShowAllMember">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1190</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>نمایش</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/images/login.png</normaloff>:/img/images/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+	border : 1px solid #b0bfae;
+	border-radius : 5px;
+	background-color : #ebe8e8;
+}
+
+QPushButton{
+	border-radius: 10px;
+	padding : 2px 5px;
+	background :#2b58e0;
+	border : 2px solid #21698a;
+	color : white;
+}
+QPushButton:hover {
+	background-color : #75a0eb ;
+}
+QToolButton
+{
+border-radius:10px;
+background:red;
+color:white;
+}
+
+
+QTableWidget{
+selection-background-color: #75a0eb ;
+border : 1px solid #ccc;
+background-color : #f6f6f6;
+alternate-background-color : #e9e9e9;
+color : black;
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableMembers">
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>103</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>شماره عضویت</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام پدر</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>کدملی</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>تاریخ تولد</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>شماره موبایل</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ایمیل</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام کاربری</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>رمز عبور</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="delete_2">
+       <property name="text">
+        <string>حذف</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="edit">
+       <property name="text">
+        <string>ویرایش</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="back">
+       <property name="text">
+        <string>برگشت</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

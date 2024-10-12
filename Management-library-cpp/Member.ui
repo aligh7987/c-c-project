@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Member</class>
+ <widget class="QMainWindow" name="Member">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>829</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>پنل کاربر</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/images/login.png</normaloff>:/img/images/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+	border : 1px solid #b0bfae;
+	border-radius : 5px;
+	background-color : #ebe8e8;
+}
+
+QPushButton{
+	border-radius: 10px;
+	padding : 2px 5px;
+	background :#2b58e0;
+	border : 2px solid #21698a;
+	color : white;
+}
+QPushButton:hover {
+	background-color : #75a0eb ;
+}
+QToolButton
+{
+border-radius:10px;
+background:red;
+color:white;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/images/memberIBack.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>3</number>
+      </property>
+      <property name="indent">
+       <number>-3</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="listBorrowedBooks">
+        <property name="text">
+         <string>لیست کتاب های امانت گرفته</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="printlibrarycard">
+        <property name="text">
+         <string>چاپ کارت عضویت</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="changePassword">
+        <property name="text">
+         <string>تغییر رمز عبور</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>829</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>فایل</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="separator"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>درباره</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>خروج از حساب کاربری</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>خروج از برنامه</string>
+   </property>
+   <property name="toolTip">
+    <string>خروج از برنامه</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_4</sender>
+   <signal>triggered()</signal>
+   <receiver>Member</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>414</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

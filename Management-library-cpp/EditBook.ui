@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditBook</class>
+ <widget class="QDialog" name="EditBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ویرایش</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/images/login.png</normaloff>:/img/images/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+	border : 1px solid #b0bfae;
+	border-radius : 5px;
+	background-color : #ebe8e8;
+}
+
+QPushButton{
+	border-radius: 10px;
+	padding : 2px 5px;
+	background :#2b58e0;
+	border : 2px solid #21698a;
+	color : white;
+}
+QPushButton:hover {
+	background-color : #75a0eb ;
+}
+QToolButton
+{
+border-radius:10px;
+background:red;
+color:white;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>ویرایش</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="4">
+       <widget class="QLineEdit" name="publisher"/>
+      </item>
+      <item row="1" column="7" colspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>نویسنده :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="8">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>مترجم :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLineEdit" name="name"/>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLineEdit" name="writer"/>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLineEdit" name="year"/>
+      </item>
+      <item row="6" column="7">
+       <widget class="QRadioButton" name="child">
+        <property name="text">
+         <string>کودک</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>نام :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="6">
+       <widget class="QRadioButton" name="teen">
+        <property name="text">
+         <string>نوجوان</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QLineEdit" name="genre"/>
+      </item>
+      <item row="4" column="8">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>سال چاپ :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLineEdit" name="translater"/>
+      </item>
+      <item row="9" column="1">
+       <widget class="QPushButton" name="back">
+        <property name="text">
+         <string>برگشت</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="8">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>رده سنی :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="8">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>انتشارات :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="8">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>ژانر :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5">
+       <widget class="QRadioButton" name="young">
+        <property name="text">
+         <string>جوان و غیره</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="4">
+       <widget class="QPushButton" name="submit">
+        <property name="text">
+         <string>ثبت</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

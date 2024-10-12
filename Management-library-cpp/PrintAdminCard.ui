@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PrintAdminCard</class>
+ <widget class="QDialog" name="PrintAdminCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>331</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>چاپ کارت ادمین</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/images/login.png</normaloff>:/img/images/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+	border : 1px solid #b0bfae;
+	border-radius : 5px;
+	background-color : #ebe8e8;
+}
+
+QPushButton{
+	border-radius: 10px;
+	padding : 2px 5px;
+	background :#2b58e0;
+	border : 2px solid #21698a;
+	color : white;
+}
+QPushButton:hover {
+	background-color : #75a0eb ;
+}
+QToolButton
+{
+border-radius:10px;
+background:red;
+color:white;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="showCard">
+       <property name="text">
+        <string>نمایش</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="id">
+       <property name="placeholderText">
+        <string>آیدی ادمین مورد نظر</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextBrowser" name="adminCard">
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>4</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="print_2">
+       <property name="text">
+        <string>چاپ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="back">
+       <property name="text">
+        <string>برگشت</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

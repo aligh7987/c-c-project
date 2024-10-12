@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/login.png</file>
+        <file>images/backAdmin.jpg</file>
+        <file>images/managerBack.jpg</file>
+        <file>images/memberIBack.png</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>fonts/Shabnam.ttf</file>
+        <file>fonts/Shabnam-Bold.ttf</file>
+    </qresource>
+</RCC>

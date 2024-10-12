@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>صفحه ورود</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/images/login.png</normaloff>:/img/images/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+	border : 1px solid #b0bfae;
+	border-radius : 5px;
+	background-color : #ebe8e8;
+}
+
+QPushButton{
+	border-radius: 10px;
+	padding : 2px 5px;
+	background :#2b58e0;
+	border : 2px solid #21698a;
+	color : white;
+}
+QPushButton:hover {
+	background-color : #75a0eb ;
+}
+QToolButton
+{
+border-radius:10px;
+background:red;
+color:white;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>9</number>
+     </property>
+     <property name="bottomMargin">
+      <number>9</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/img/images/login.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>مدیریت کتابخانه</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="username">
+        <property name="toolTip">
+         <string>نام کاربری را وارد نمایید </string>
+        </property>
+        <property name="placeholderText">
+         <string>نام کاربری</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>نام کاربری  :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="password">
+        <property name="toolTip">
+         <string>رمز عبور را وارد نمایید</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>رمز عبور</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>رمز عبور    :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="login">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>ورود</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="forgotPas">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>بازیابی رمز عبور </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

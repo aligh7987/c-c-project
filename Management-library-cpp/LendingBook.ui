@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LendingBook</class>
+ <widget class="QDialog" name="LendingBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>امانت</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/images/login.png</normaloff>:/img/images/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+	border : 1px solid #b0bfae;
+	border-radius : 5px;
+	background-color : #ebe8e8;
+}
+
+QPushButton{
+	border-radius: 10px;
+	padding : 2px 5px;
+	background :#2b58e0;
+	border : 2px solid #21698a;
+	color : white;
+}
+QPushButton:hover {
+	background-color : #75a0eb ;
+}
+QToolButton
+{
+border-radius:10px;
+background:red;
+color:white;
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="search">
+       <property name="text">
+        <string>جستجو</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nCode">
+       <property name="placeholderText">
+        <string>کدملی</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableMembers">
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>105</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>شماره عضویت</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام پدر</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>کدملی</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>تاریخ تولد</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>شماره موبایل</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ایمیل</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام کاربری</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>رمز عبور</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>تاریخ برگرداندن آخرین امانت</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="lendBook">
+       <property name="text">
+        <string>امانت دادن</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="bookId">
+       <property name="placeholderText">
+        <string>حداکثر 4 آیدی کتاب وارد کنید</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableBooks">
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>105</number>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>آیدی کتاب</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نام کتاب </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>نویسنده</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>انتشارات</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>مترجم</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>سال چاپ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ژانر</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>رده سنی</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="back">
+     <property name="text">
+      <string>برگشت</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
