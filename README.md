@@ -1,4 +1,4 @@
-# c-c-project
+# c-cpp-project
 
 This repository contains two projects, one in C language and the other in C++ language.
 
